@@ -6,7 +6,7 @@ const LeftNav = () => {
     const [catagoris , setCatagoris] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/catagoris')
+        fetch('https://the-news-dragon-server-debabrata2003.vercel.app/catagoris')
         .then(res => res.json())
         .then(data => setCatagoris(data))
         .catch(error => console.log(error))
